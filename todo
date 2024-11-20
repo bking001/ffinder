@@ -1,0 +1,31 @@
+https://proxy-sms.airlink.ge/admin/login
+beso.chkhutiashvili@gmail.com
+Admin1234
+ 
+
+
+    Hostname: ts-stb.airlink.ge
+    User: root
+    Password: Airlink2020-+
+
+    168000 დღე
+
+
+    php artisan make:export UsersExport --model=AllOntStatsModel
+
+
+    use App\Exports\UsersExport;
+    use Maatwebsite\Excel\Facades\Excel;
+
+ 
+
+
+
+ მფლობელი: გიორგი ნიკოლაიშვილი
+სათაური : თასქინგის სერვერი
+აღწერა : 
+თასქინგის პროექტისთვის საჭიროა სერვერი  ფროდაქშენი ,  rocky  linux  ,  php 8.4+  , ბაზა  , phpmyadmin ,  hostname  :  tasking.airlink.ge  , storage  30 gb 
+
+პრიორიტეტი: დაბალი 
+გადაწყვეტილება: 
+

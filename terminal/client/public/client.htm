@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TERMINAL</title>
+  <style>
+    html, body {overflow: hidden !important;height: 100%;margin: 0;}.dropup-content {display: none;}
+  </style>
+  <link rel="stylesheet" href="/ssh/webssh2.css" />
+  <link rel="icon" href="/ssh/favicon.ico" />
+</head>
+<body>
+  <div class="box">
+    <div id="header"></div>
+    <div id="terminal-container" class="terminal"></div>
+    <div id="bottomdiv">
+      <div class="dropup" id="menu" style="display:none">
+        <i class="fas fa-bars fa-fw"></i> Menu
+        <div id="dropupContent" class="dropup-content">
+          <a id="logBtn"><i class="fas fa-clipboard fa-fw"></i> Start Log</a>
+          <a id="downloadLogBtn"><i class="fas fa-download fa-fw"></i> Download Log</a>
+          <a id="reauthBtn" style="display: none;"><i class="fas fa-key fa-fw"></i> Switch User</a>
+          <a id="credentialsBtn" style="display: none;"><i class="fas fa-key fa-fw"></i> Credentials</a>
+        </div>
+      </div>
+      <div id="footer" style="display:none"></div>
+      <div id="status"></div>
+      <div id="countdown"></div>
+    </div>
+  </div>
+<script src="/ssh/webssh2.bundle.js" defer></script>
+<script>
+
+  console.log('no event', document.execCommand('bold'));
+
+  document.getElementById('terminal-container').addEventListener('click', function(){
+      console.log('user click', document.execCommand('copy'));
+  });
+
+  document.getElementById('terminal-container').addEventListener('fakeclick', function(){
+      console.log('fake click', document.execCommand('copy'));
+  });
+
+
+  var event = new Event('fakeclick')
+
+  document.getElementById('terminal-container').dispatchEvent(event) ;
+ 
+     
+</script>
+</body>
+</html>

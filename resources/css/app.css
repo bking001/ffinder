@@ -1,0 +1,39 @@
+@tailwind base;
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 5px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #4338ca;
+    border-radius: 14px;
+    border: 1px solid var(--primary);
+  }
+
+@tailwind components;
+@tailwind utilities;
+
+.editedGreen{
+  color:#4ade80;
+}
+
+.td-class {
+  @apply px-4 py-3 text-xs text-gray-400 bg-gray-900 first:rounded-t-lg last:rounded-b-lg sm:first:rounded-t-none sm:last:rounded-b-none sm:first:rounded-tl-lg sm:first:rounded-bl-lg sm:last:rounded-tr-lg sm:last:rounded-br-lg
+} 
+
+
+.tr-class {
+  @apply flex flex-col mb-4 sm:table-row
+}
+
+ 
+.suspended-text {
+  @apply text-gray-500
+}
+
